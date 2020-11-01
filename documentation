@@ -33,6 +33,7 @@ function OxyLibrary:Create()
     local Oxy = Instance.new("TextLabel")
     local Hub = Instance.new("TextLabel")
 
+
     OxyLib.Name = tostring(LibName)
     OxyLib.Parent = game.CoreGui
     OxyLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
@@ -42,6 +43,9 @@ function OxyLibrary:Create()
     Library.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
     Library.Position = UDim2.new(0.326875001, 0, 0.241460547, 0)
     Library.Size = UDim2.new(0, 694, 0, 438)
+    Library.Active = true
+    Library.Draggable = true
+    Library.Selectable = true
 
     elements.Name = "elements"
     elements.Parent = Library
